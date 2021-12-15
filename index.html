@@ -313,7 +313,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <form name="contact" class="contact-form" id="contact-form" data-netlify="true">
+                            <form name="contact" class="contact-form" id="contact-form" data-netlify="true" data-netlify-recaptcha="true">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required>
@@ -327,6 +327,9 @@
                                     <div class="col-12 form-group form-message mt-4">
                                         <textarea class="form-control" id="contact-message" name="message" placeholder="Message" rows="6" required>
                                         </textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3" data-netlify-recaptcha="true"></div>
                                     </div>
                                     <div class="col-12 form-group form-message mt-4">
                                         <button class="btn btn-dark" id="contact-submit" type="submit">Send Message</button>
